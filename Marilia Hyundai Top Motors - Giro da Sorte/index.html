@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+ <title>Giro da Sorte Hyundai Top Motors</title>
+ 
+ <link rel="preload" as="image" href="assets/MOBILE.png" media="(max-width: 600px)">
+ <link rel="preload" as="image" href="assets/FUNDO.png" media="(min-width: 601px)">
+
+ <link rel="stylesheet" href="style.css" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+ 
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+ <audio id="audio-spin" src="assets/sound/spin.mp3" preload="auto"></audio>
+ 
+ <img src="assets/Logo lateral_Branca (1) (1).png" alt="Hyundai Logo" class="logo" />
+ 
+ <h1 class="titulo-janeiro">
+    JANEIRO PREMIADO: <br>
+    <span class="destaque">GIRE E GANHE</span> CONDIÇÕES EXCLUSIVAS
+ </h1>
+
+ <div class="slot-machine">
+   <div class="slot"><div class="reel"></div></div>
+   <div class="slot"><div class="reel"></div></div>
+   <div class="slot"><div class="reel"></div></div>
+ </div>
+
+ <button id="btn-girar" class="button" onclick="girar()">GIRAR AGORA</button>
+ 
+ <div class="result" id="resultado"></div>
+
+ <a id="cta" href="#" class="button" style="display: none; background: #25D366;" target="_blank">
+   🎁 Resgatar no WhatsApp
+ </a>
+
+ <div id="timer-container" class="timer-container">
+    <div id="aviso-timer" style="color: white; font-size: 18px; text-align: center; margin-bottom: 10px;">
+        Limite de tentativas atingido.<br>Tente novamente em:
+    </div>
+    <div id="timer-text">30:00</div>
+ </div>
+
+ <div class="legal">
+   Promoção válida exclusivamente nas concessionárias Hyundai Top Motors, vinculada à compra de veículo 0km. O benefício sorteado só será concedido mediante efetivação da compra durante o período promocional, com negociação formalizada, aprovação de crédito e disponibilidade em estoque. Vantagens são pessoais, intransferíveis, não cumulativas e não convertidas em dinheiro. Participar implica ciência e concordância com o regulamento completo, disponível nas lojas. Promoção válida até 31/01/2026 </div> </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
